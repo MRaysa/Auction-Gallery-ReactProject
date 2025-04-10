@@ -1,10 +1,10 @@
 import React from "react";
 import AuctionRow from "./AuctionRow";
 
-const ActiveAuctions = ({ items }) => {
+const ActiveAuctions = ({ items, favoritedIds, onAddFavorite }) => {
   return (
-    <div className="bg-white rounded-xl shadow-md overflow-hidden ">
-      <div className="overflow-x-auto ">
+    <div className="bg-white rounded-xl shadow-2xl overflow-hidden">
+      <div className="overflow-x-auto">
         <table className="min-w-full">
           <thead className="bg-gray-100">
             <tr>
@@ -27,8 +27,8 @@ const ActiveAuctions = ({ items }) => {
               <AuctionRow
                 key={item.id}
                 item={item}
-                // isFavorite={favoritedIds.includes(item.id)}
-                // onAddFavorite={onAddFavorite}
+                isFavorite={favoritedIds.includes(item.id)}
+                onAddFavorite={onAddFavorite}
               />
             ))}
           </tbody>
