@@ -9,11 +9,11 @@ const AuctionSection = () => {
       try {
         const response = await fetch("data.json");
         const data = await response.json();
-        console.log(data);
-        console.log(data.auctionItems);
-        setAuctionItems(data.AuctionSection);
+        console.log("ফেচ করা ডেটা:", data);
+        setAuctionItems(data.auctionItems);
       } catch (error) {
-        console.error("Error fatchs of data", error);
+        console.error("ডেটা লোড করতে ত্রুটি:", error);
+        setAuctionItems([]); // ত্রুটি হলে খালি অ্যারে সেট করুন
       }
     };
     fetchData();
@@ -34,7 +34,7 @@ const AuctionSection = () => {
         </div>
         <div className="flex flex-col md:flex-row gap-8">
           <div className="md:w-[70%]">
-            <ActiveAuctions></ActiveAuctions>
+            <ActiveAuctions items={auctionItems}></ActiveAuctions>
           </div>
           <div className="w-[30%]">
             <FavoritesSection></FavoritesSection>

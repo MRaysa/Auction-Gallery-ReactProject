@@ -43,7 +43,7 @@ const Navbar = () => {
         {/* User Actions */}
         <div className="flex items-center space-x-4">
           {/* Notification Bell */}
-          <button className="hidden md:block text-gray-700 hover:text-indigo-600 relative bg-blue-100 p-2 rounded-full">
+          <button className="hidden md:block text-gray-700 hover:text-indigo-600 relative bg-blue-100 p-2 rounded-full cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -64,7 +64,7 @@ const Navbar = () => {
           </button>
 
           {/* User Avatar */}
-          <button className="hidden md:block text-gray-700 hover:text-indigo-600">
+          <button className="hidden md:block text-gray-700 hover:text-indigo-600 cursor-pointer">
             <div className="w-8 h-8 rounded-full overflow-hidden border-2 border-indigo-100">
               <img
                 alt="User profile"
