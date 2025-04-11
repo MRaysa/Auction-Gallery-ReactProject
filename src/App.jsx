@@ -22,6 +22,7 @@ function App() {
         draggable
         pauseOnHover
       />
+
       <Footer></Footer>
     </>
   );

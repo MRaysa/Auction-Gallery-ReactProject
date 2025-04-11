@@ -3,7 +3,7 @@ import AuctionRow from "./AuctionRow";
 
 const ActiveAuctions = ({ items, favoritedIds, onAddFavorite }) => {
   return (
-    <div className="bg-white rounded-xl shadow-2xl overflow-hidden">
+    <div className="bg-white rounded-xl shadow-md overflow-hidden">
       <div className="overflow-x-auto">
         <table className="min-w-full">
           <thead className="bg-gray-100">

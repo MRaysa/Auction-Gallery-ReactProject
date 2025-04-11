@@ -3,8 +3,8 @@ import FavoriteItem from "./FavoriteItem";
 
 const FavoritesSection = ({ favorites, totalAmount, onRemoveFavorite }) => {
   return (
-    <div className="bg-white rounded-xl shadow-2xl p-6 ">
-      <div className="flex items-center mb-4 text-center border-b pb-4 justify-center">
+    <div className="bg-white rounded-xl shadow-md p-6 ">
+      <div className="flex items-center mb-4 text-center  border-b border-b-gray-300 pb-4 justify-center">
         <span className="text-2xl mr-2">🤍</span>
         <h3 className="text-xl font-bold text-gray-800">Favorite Items</h3>
       </div>
@@ -15,7 +15,7 @@ const FavoritesSection = ({ favorites, totalAmount, onRemoveFavorite }) => {
           <p className="text-gray-500 pb-4">
             Click the heart icon on any item to add it to your favorites
           </p>
-          <div className="border-t pt-3">
+          <div className="border-t border-t-gray-300 pt-3">
             <div className="flex justify-between items-center">
               <span className="font-bold text-gray-800">
                 Total bids Amount:
@@ -43,7 +43,7 @@ const FavoritesSection = ({ favorites, totalAmount, onRemoveFavorite }) => {
               />
             ))}
           </div>
-          <div className="border-t pt-3">
+          <div className="border-t border-t-gray-300 pt-3">
             <div className="flex justify-between items-center">
               <span className="font-bold text-gray-800">
                 Total bids Amount:

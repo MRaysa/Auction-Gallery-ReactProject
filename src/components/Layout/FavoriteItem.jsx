@@ -2,25 +2,27 @@ import React from "react";
 
 const FavoriteItem = ({ item, onRemoveFavorite }) => {
   return (
-    <div className="flex items-center gap-3 p-3 border rounded-lg hover:bg-gray-50">
+    <div className="flex items-center gap-4 p-4 border-b border-gray-200 last:border-b-0">
       <img
         src={item.image}
         alt={item.title}
-        className="w-12 h-12 rounded-md object-cover border"
+        className="w-16 h-16 rounded-lg object-cover"
       />
       <div className="flex-1 min-w-0">
-        <div className="flex justify-between items-center">
-          <h4 className="font-medium text-gray-800 truncate">{item.title}</h4>
+        <div className="flex justify-between items-center gap-2">
+          <h4 className="font-medium text-gray-900 truncate text-base">
+            {item.title}
+          </h4>
           <button
             onClick={() => onRemoveFavorite(item.id)}
-            className="text-red-500 hover:text-red-700 text-lg"
+            className="text-gray-400 hover:text-red-500 text-lg flex-shrink-0 cursor-pointer"
             aria-label="Remove from favorites"
           >
-            ❌
+            ✕
           </button>
         </div>
-        <div className="flex justify-between mt-1 text-sm">
-          <span className="text-gray-700">
+        <div className="flex  gap-4 mt-2">
+          <span className="font-medium text-gray-900">
             ${item.currentBidPrice.toLocaleString()}
           </span>
           <span className="text-gray-500">Bids: {item.bidsCount}</span>

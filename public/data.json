@@ -1,67 +1,309 @@
 {
   "auctionItems": [
     {
-      "id": 1,
-      "title": "Vintage Leica M3 Camera",
-      "description": "Classic German rangefinder camera from 1954",
-      "currentBidPrice": 2850,
-      "timeLeft": "2 Days left",
-      "bidsCount": 14,
-      "image": "https://i.ibb.co.com/BHJZwTFN/Bid1-min.png"
-    },
-    {
       "id": 2,
-      "title": "1965 Gibson SG Standard Electric Guitar",
-      "description": "Vintage electric guitar with original cherry finish",
-      "currentBidPrice": 1850,
-      "timeLeft": "3 Days left",
-      "bidsCount": 9,
-      "image": "https://i.ibb.co.com/Ps3xbhRh/Bid2-min.png"
+      "title": "Rolex Submariner Watch",
+      "description": "Luxury diving watch, stainless steel, 2020 model with box and papers",
+      "currentBidPrice": 12500,
+      "timeLeft": "1 Day left",
+      "bidsCount": 22,
+      "image": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=600&auto=format&fit=crop",
+      "bidders": [
+        {
+          "id": 103,
+          "name": "Jordan",
+          "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100&auto=format&fit=crop",
+          "bids": 8,
+          "winRate": 67,
+          "isPremium": true,
+          "lastBidTime": "2023-05-04T16:15:00Z"
+        },
+        {
+          "id": 104,
+          "name": "Taylor",
+          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop",
+          "bids": 5,
+          "winRate": 41,
+          "isPremium": true,
+          "lastBidTime": "2023-05-04T15:30:00Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2023-05-01",
+          "open": 11500,
+          "high": 12800,
+          "low": 11400,
+          "close": 12500
+        }
+      ]
     },
     {
       "id": 3,
-      "title": "Original Apple Macintosh 128K (1984)",
-      "description": "First-generation Macintosh with original peripherals",
-      "currentBidPrice": 2900,
-      "timeLeft": "8 Days left",
-      "bidsCount": 22,
-      "image": "https://i.ibb.co.com/NgrmkkZq/Bid3-min.png"
+      "title": "Signed Beatles Album",
+      "description": "Original 1967 Sgt. Pepper's Lonely Hearts Club Band signed by all four members",
+      "currentBidPrice": 18500,
+      "timeLeft": "3 Hours left",
+      "bidsCount": 37,
+      "image": "https://images.unsplash.com/photo-1565843248736-8c41e6db117b?w=600&auto=format&fit=crop",
+      "bidders": [
+        {
+          "id": 105,
+          "name": "Casey",
+          "avatar": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=100&auto=format&fit=crop",
+          "bids": 12,
+          "winRate": 73,
+          "isPremium": true,
+          "lastBidTime": "2023-05-04T17:45:00Z"
+        },
+        {
+          "id": 106,
+          "name": "Morgan",
+          "avatar": "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=100&auto=format&fit=crop",
+          "bids": 9,
+          "winRate": 58,
+          "isPremium": false,
+          "lastBidTime": "2023-05-04T17:30:00Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2023-05-01",
+          "open": 15000,
+          "high": 19000,
+          "low": 14800,
+          "close": 18500
+        }
+      ]
     },
     {
       "id": 4,
-      "title": "Rolex Submariner 16610",
-      "description": "Stainless steel luxury dive watch circa 1990s",
-      "currentBidPrice": 5850,
-      "timeLeft": "9 Days left",
-      "bidsCount": 18,
-      "image": "https://i.ibb.co.com/TD9WbjR1/Bid4-min.png"
-    },
-    {
-      "id": 5,
-      "title": "Mid-Century Modern Eames Lounge Chair",
-      "description": "1925 first printing with original dust jacket",
-      "currentBidPrice": 2250,
+      "title": "Picasso Lithograph",
+      "description": "Original 1950s lithograph by Pablo Picasso, limited edition of 250",
+      "currentBidPrice": 42500,
       "timeLeft": "5 Days left",
-      "bidsCount": 7,
-      "image": "https://i.ibb.co.com/1tzwFDNy/Bid5-min.png"
+      "bidsCount": 8,
+      "image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=600&auto=format&fit=crop",
+      "bidders": [
+        {
+          "id": 107,
+          "name": "Riley",
+          "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&auto=format&fit=crop",
+          "bids": 3,
+          "winRate": 82,
+          "isPremium": true,
+          "lastBidTime": "2023-05-04T18:00:00Z"
+        },
+        {
+          "id": 108,
+          "name": "Jamie",
+          "avatar": "https://images.unsplash.com/photo-1554151228-14d9def656e4?w=100&auto=format&fit=crop",
+          "bids": 2,
+          "winRate": 65,
+          "isPremium": true,
+          "lastBidTime": "2023-05-04T17:15:00Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2023-05-01",
+          "open": 40000,
+          "high": 43000,
+          "low": 39500,
+          "close": 42500
+        }
+      ]
     },
+
     {
       "id": 6,
-      "title": "First Edition 'The Great Gatsby' by F. Scott Fitzgerald",
-      "description": "Authentic 1956 Herman Miller design in black leather",
-      "currentBidPrice": 2600,
-      "timeLeft": "4 Days left",
-      "bidsCount": 11,
-      "image": "https://i.ibb.co.com/PG43H3N3/Bid6-min.png"
+      "title": "Hermès Birkin Bag",
+      "description": "35cm Black Togo leather with gold hardware, 2018",
+      "currentBidPrice": 18500,
+      "timeLeft": "1 Day left",
+      "bidsCount": 29,
+      "image": "https://images.unsplash.com/photo-1591348122449-02525d70379b?w=600&auto=format&fit=crop",
+      "bidders": [
+        {
+          "id": 111,
+          "name": "Avery",
+          "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop",
+          "bids": 7,
+          "winRate": 63,
+          "isPremium": true,
+          "lastBidTime": "2023-05-04T20:15:00Z"
+        },
+        {
+          "id": 112,
+          "name": "Skyler",
+          "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&auto=format&fit=crop",
+          "bids": 5,
+          "winRate": 52,
+          "isPremium": false,
+          "lastBidTime": "2023-05-04T19:30:00Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2023-05-01",
+          "open": 17000,
+          "high": 19000,
+          "low": 16800,
+          "close": 18500
+        }
+      ]
     },
     {
       "id": 7,
-      "title": "Banksy Original Screen Print",
-      "description": "Signed 'Girl with Balloon' limited edition print",
-      "currentBidPrice": 1800,
-      "timeLeft": "7 Days left",
-      "bidsCount": 16,
-      "image": "https://i.ibb.co.com/WbNm9v2/Bid7-min.png"
+      "title": "Rare 1st Edition Books",
+      "description": "Set of 5 rare first edition novels from 1920s including Hemingway",
+      "currentBidPrice": 12500,
+      "timeLeft": "3 Days left",
+      "bidsCount": 18,
+      "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=600&auto=format&fit=crop",
+      "bidders": [
+        {
+          "id": 113,
+          "name": "Quinn",
+          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop",
+          "bids": 6,
+          "winRate": 71,
+          "isPremium": true,
+          "lastBidTime": "2023-05-04T21:00:00Z"
+        },
+        {
+          "id": 114,
+          "name": "Parker",
+          "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100&auto=format&fit=crop",
+          "bids": 4,
+          "winRate": 59,
+          "isPremium": true,
+          "lastBidTime": "2023-05-04T20:30:00Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2023-05-01",
+          "open": 11000,
+          "high": 13000,
+          "low": 10800,
+          "close": 12500
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Vintage Wine Collection",
+      "description": "12 bottles of rare Bordeaux from 1982 including Château Margaux",
+      "currentBidPrice": 28500,
+      "timeLeft": "2 Days left",
+      "bidsCount": 14,
+      "image": "https://images.unsplash.com/photo-1551751299-1b51cab2694c?w=600&auto=format&fit=crop",
+      "bidders": [
+        {
+          "id": 115,
+          "name": "Blake",
+          "avatar": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=100&auto=format&fit=crop",
+          "bids": 5,
+          "winRate": 68,
+          "isPremium": true,
+          "lastBidTime": "2023-05-04T22:15:00Z"
+        },
+        {
+          "id": 116,
+          "name": "Reese",
+          "avatar": "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=100&auto=format&fit=crop",
+          "bids": 3,
+          "winRate": 55,
+          "isPremium": false,
+          "lastBidTime": "2023-05-04T21:45:00Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2023-05-01",
+          "open": 25000,
+          "high": 29000,
+          "low": 24500,
+          "close": 28500
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Antique Persian Rug",
+      "description": "19th century hand-woven silk rug, 8x10 feet, excellent condition",
+      "currentBidPrice": 18500,
+      "timeLeft": "4 Days left",
+      "bidsCount": 11,
+      "image": "https://images.unsplash.com/photo-1600166898405-da9535204843?w=600&auto=format&fit=crop",
+      "bidders": [
+        {
+          "id": 117,
+          "name": "Sage",
+          "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&auto=format&fit=crop",
+          "bids": 4,
+          "winRate": 77,
+          "isPremium": true,
+          "lastBidTime": "2023-05-04T23:00:00Z"
+        },
+        {
+          "id": 118,
+          "name": "Rowan",
+          "avatar": "https://images.unsplash.com/photo-1554151228-14d9def656e4?w=100&auto=format&fit=crop",
+          "bids": 2,
+          "winRate": 63,
+          "isPremium": true,
+          "lastBidTime": "2023-05-04T22:30:00Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2023-05-01",
+          "open": 16000,
+          "high": 19000,
+          "low": 15500,
+          "close": 18500
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "SpaceX Memorabilia Collection",
+      "description": "Signed Falcon 9 nosecone and mission patches from first crewed flight",
+      "currentBidPrice": 32500,
+      "timeLeft": "12 Hours left",
+      "bidsCount": 47,
+      "image": "https://images.unsplash.com/photo-1454789548928-9efd52dc4031?w=600&auto=format&fit=crop",
+      "bidders": [
+        {
+          "id": 119,
+          "name": "Elliot",
+          "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&auto=format&fit=crop",
+          "bids": 12,
+          "winRate": 85,
+          "isPremium": true,
+          "lastBidTime": "2023-05-05T00:15:00Z"
+        },
+        {
+          "id": 120,
+          "name": "Finley",
+          "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&auto=format&fit=crop",
+          "bids": 9,
+          "winRate": 72,
+          "isPremium": true,
+          "lastBidTime": "2023-05-04T23:45:00Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2023-05-01",
+          "open": 28000,
+          "high": 33000,
+          "low": 27500,
+          "close": 32500
+        }
+      ]
     }
   ]
 }
