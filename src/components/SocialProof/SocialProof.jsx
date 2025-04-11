@@ -108,7 +108,7 @@ const SocialProof = () => {
         </div>
 
         {/* Testimonial cards */}
-        <div className="relative grid gap-8 sm:grid-cols-3 z-10">
+        <div className="relative grid gap-8 sm:grid-cols-3 z-10 pb-4">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
