@@ -5,6 +5,7 @@ import Hero from "./components/Hero/Hero";
 import Footer from "./components/Footer/Footer";
 import AuctionSection from "./components/Layout/AuctionSection";
 import { ToastContainer } from "react-toastify";
+import SocialProof from "./components/SocialProof/SocialProof";
 function App() {
   return (
     <>
@@ -22,7 +23,7 @@ function App() {
         draggable
         pauseOnHover
       />
-
+      <SocialProof></SocialProof>
       <Footer></Footer>
     </>
   );
