@@ -1,7 +1,7 @@
 {
   "auctionItems": [
     {
-      "id": 2,
+      "id": 1,
       "title": "Rolex Submariner Watch",
       "description": "Luxury diving watch, stainless steel, 2020 model with box and papers",
       "currentBidPrice": 12500,
@@ -39,7 +39,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 2,
       "title": "Signed Beatles Album",
       "description": "Original 1967 Sgt. Pepper's Lonely Hearts Club Band signed by all four members",
       "currentBidPrice": 18500,
@@ -77,7 +77,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 3,
       "title": "Picasso Lithograph",
       "description": "Original 1950s lithograph by Pablo Picasso, limited edition of 250",
       "currentBidPrice": 42500,
@@ -116,7 +116,7 @@
     },
 
     {
-      "id": 6,
+      "id": 4,
       "title": "Hermès Birkin Bag",
       "description": "35cm Black Togo leather with gold hardware, 2018",
       "currentBidPrice": 18500,
@@ -154,7 +154,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 5,
       "title": "Rare 1st Edition Books",
       "description": "Set of 5 rare first edition novels from 1920s including Hemingway",
       "currentBidPrice": 12500,
@@ -192,7 +192,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": 6,
       "title": "Vintage Wine Collection",
       "description": "12 bottles of rare Bordeaux from 1982 including Château Margaux",
       "currentBidPrice": 28500,
@@ -230,7 +230,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": 7,
       "title": "Antique Persian Rug",
       "description": "19th century hand-woven silk rug, 8x10 feet, excellent condition",
       "currentBidPrice": 18500,
@@ -268,7 +268,7 @@
       ]
     },
     {
-      "id": 10,
+      "id": 8,
       "title": "SpaceX Memorabilia Collection",
       "description": "Signed Falcon 9 nosecone and mission patches from first crewed flight",
       "currentBidPrice": 32500,

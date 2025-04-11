@@ -15,6 +15,7 @@ const AuctionSection = () => {
   const [selectedItem, setSelectedItem] = useState(null);
   const [showModal, setShowModal] = useState(false);
 
+  // Load favorites from localStorage on component mount
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -23,6 +24,17 @@ const AuctionSection = () => {
         const data = await response.json();
         setAuctionItems(data.auctionItems);
         setChartData(data.auctionItems.filter((item) => item.priceHistory));
+
+        // Load favorites from localStorage
+        const savedFavorites =
+          JSON.parse(localStorage.getItem("auctionFavorites")) || [];
+        const savedFavoritedIds =
+          JSON.parse(localStorage.getItem("favoritedIds")) || [];
+        setFavorites(savedFavorites);
+        setFavoritedIds(savedFavoritedIds);
+        setTotalAmount(
+          savedFavorites.reduce((sum, item) => sum + item.currentBidPrice, 0)
+        );
       } catch (err) {
         console.error("Fetch error:", err);
         toast.error("Failed to load auction data");
@@ -36,9 +48,20 @@ const AuctionSection = () => {
   const handleAddFavorite = (item) => {
     if (!favorites.some((fav) => fav.id === item.id)) {
       const updatedFavorites = [...favorites, item];
+      const updatedFavoritedIds = [...favoritedIds, item.id];
+
+      // Update state
       setFavorites(updatedFavorites);
-      setFavoritedIds([...favoritedIds, item.id]);
+      setFavoritedIds(updatedFavoritedIds);
       setTotalAmount(totalAmount + item.currentBidPrice);
+
+      // Save to localStorage
+      localStorage.setItem(
+        "auctionFavorites",
+        JSON.stringify(updatedFavorites)
+      );
+      localStorage.setItem("favoritedIds", JSON.stringify(updatedFavoritedIds));
+
       toast.success(`${item.title} successfully added to favorites!`);
     }
   };
@@ -46,9 +69,17 @@ const AuctionSection = () => {
   const handleRemoveFavorite = (itemId) => {
     const item = favorites.find((fav) => fav.id === itemId);
     const updatedFavorites = favorites.filter((fav) => fav.id !== itemId);
+    const updatedFavoritedIds = favoritedIds.filter((id) => id !== itemId);
+
+    // Update state
     setFavorites(updatedFavorites);
-    setFavoritedIds(favoritedIds.filter((id) => id !== itemId));
+    setFavoritedIds(updatedFavoritedIds);
     setTotalAmount(totalAmount - item.currentBidPrice);
+
+    // Save to localStorage
+    localStorage.setItem("auctionFavorites", JSON.stringify(updatedFavorites));
+    localStorage.setItem("favoritedIds", JSON.stringify(updatedFavoritedIds));
+
     toast.success(`${item.title} successfully removed from favorites!`);
   };
 
